@@ -14,7 +14,7 @@ const UseEffect = () => {
 
     useEffect(() => {
         getUsers();
-    }, []) //This array is to stop the continous loop of the function useEffect
+    }, []) //This array is to stop the continuos loop of the function useEffect
   return (
     <>
       <h1 className='head'>User Cards</h1>
@@ -22,7 +22,7 @@ const UseEffect = () => {
         <div className='row text-center'>
             {
                 users.map((element) => { //.map() for to take each data to its html place one by one
-                    return(
+                    return( //here i am using css class where we can implement css 'selector' in the class learned and implemented from youtube
                         <div className='col-10 col-md-4 mt-5'>
                             <div className='card p-2'>
                                 <div className='d-flex align-items-center'>
